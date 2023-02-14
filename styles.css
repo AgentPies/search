@@ -1,0 +1,15 @@
+#searchbar {
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+}
+#searchbar img{
+    border-radius: inherit;
+    width: 30px;
+    height: 30px;
+    margin-left: 1px;
+}
+
+#searchbar input{
+    border-width: 0;
+}
