@@ -1,22 +1,54 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
 #navigation{
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
 }
 
 #navigation a{
+    text-decoration: none;
     margin: 3px;
 }
 
-#main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#navigation a:visited{
+    color: black;
+}
+
+#navigation a:hover{
+    text-decoration: underline;
 }
 
 h1{
     font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#title{
+    position: relative;
+}
+.subtext {
+    position: absolute;
+    top: 52%;
+    right: 0px;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: #4285f4;
+  }
+
+form{
+    display: grid;
 }
 
 #searchbar {
@@ -41,4 +73,17 @@ h1{
     margin-left: 3px;
     font-size: x-large;
     width: 80%;
+}
+
+#buttons{
+    justify-self: center;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttons input{
+    padding: 10px;
+    margin: 15px 5px 10px 5px;
+    font-size: larger;
 }
