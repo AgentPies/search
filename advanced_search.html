@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Advanced Search</title>
+        <link rel="stylesheet" href="advanced_search_styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
     </head>
     <body>
         <a href="index.html">Google  Search</a>
+        <h1>Advanced Search</h1>
+        <h2>Find websites using...</h2>
+        <form action="https://www.google.com/search">
+            <div style="grid-row: 1 / 2"  class="input-wrapper">
+                <label style="grid-column: 1 / 2">all these words:</label>
+                <input style="grid-column: 2 / 3" type="text" name="as_q">
+                <p style="grid-column: 3 / 4">Enter searched words: tricolor rat terrier</p>
+            </div>
+            <div style="grid-row: 2 / 3" class="input-wrapper">
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq">
+                <p>Enter expresion in quotation marks: "polish dog"</p>
+            </div>
+            <div style="grid-row: 3 / 4" class="input-wrapper">
+                <label>any of these words:</label>
+                <input type="text" name="as_oq">
+                <p>Put OR between entered words: miniature OR common</p>
+            </div>
+            <div style="grid-row: 4 / 5" class="input-wrapper">
+                <label>none of these words:</label>
+                <input type="text" name="as_eq">
+                <p>Enter minus before unwanted words: -rats, -terier</p>
+            </div>
+            <input style="grid-column: 2" id="submit-button" type="submit" value="Advanced search">
+        </form>
     </body>
 </html>
